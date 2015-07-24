@@ -1,8 +1,11 @@
+
 node_modules
 bower_components
 cloud
 public
-config### https://raw.github.com/github/gitignore/097db81c08b138dea7cb031eb18eeb16afe44bdf/Global/OSX.gitignore
+config/global.json
+
+### https://raw.github.com/github/gitignore/097db81c08b138dea7cb031eb18eeb16afe44bdf/Global/OSX.gitignore
 
 .DS_Store
 .AppleDouble
