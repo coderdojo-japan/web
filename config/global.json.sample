@@ -1,0 +1,14 @@
+{
+  "applications": {
+      "CoderDojo.Japan": {
+	  "applicationId": "[NOTE] Please ask this to @yasulab!",
+	  "masterKey": "[NOTE] And use Environment Variable for local development."
+      },
+      "_default": {
+	  "link": "CoderDojo.Japan"
+      }
+  },
+    "global": {
+	"parseVersion": "1.2.19"
+    }
+}
