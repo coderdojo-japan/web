@@ -2,14 +2,14 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title>CoderDojo Tokyo</title>
+    <title>CoderDojo Japan</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="CoderDojoは小中学生のためのプログラミング道場">
-    <meta property="og:title" content="CoderDojo Tokyo">
-    <meta property="og:site_name" content="CoderDojo Tokyo">
-    <meta property="og:url" content="http://tokyo.coderdojo.jp/">
-    <meta property="og:image" content="http://tokyo.coderdojo.jp/og-image.png">
+    <meta name="viewport"          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description"       content="CoderDojoは小・中学生のためのプログラミング道場">
+    <meta property="og:title"      content="CoderDojo Japan">
+    <meta property="og:site_name"  content="CoderDojo Japan">
+    <meta property="og:url"        content="http://coderdojo.jp/">
+    <meta property="og:image"      content="http://coderdojo.jp/og-image.png">
     <meta property="og:image:type" content="image/png">
 
     <link href="css/style.css" rel="stylesheet">
@@ -18,21 +18,24 @@
   <body>
     <header class="title">
       <i class="cd cd-logo"></i>
-      <h1>CoderDojo Tokyo</h1>
-      <p>CoderDojoは小中学生のためのプログラミング道場</p>
+      <h1>CoderDojo Japan</h1>
+      <p>小・中学生のためのプログラミング道場</p>
     </header>
     <section class="cover">
-      <img src="https://graph.facebook.com/411951145522588/picture">
+      <img src="http://coderdojo.jp/img/coderdojo-japan_cover.jpg">
     </section>
     <section>
-      <p>CoderDojo Tokyoでは、毎週日曜日、ボランティアによるプログラミング道場を開催しています。</p>
+      <p>CoderDojo は7〜17歳の子どもを対象にしたプログラミング道場です。2011年にアイルランドで始まり、世界では55カ国・675の道場、日本では全国に21の道場があります (2015年7月現在)。</p>
+      <p> 各道場では、主に次のような内容を教えています。</p>
       <ul>
         <li>Scratch (ブロックを組合わせて簡単プログラミング)</li>
-        <li>HTML / CSS / JavaScript</li>
-        <li>YouTubeなどを活用したWEBサイト作成</li>
-        <li>電子工作と組合わせたプログラミング</li>
+        <li>HTML / CSS / JavaScript などを活用したWEBサイト作成</li>
+        <li>Arduinoなどの電子工作と組合わせたプログラミング、など</li>
       </ul>
+      <br />
+      <p>道場の様子については、「<a href="http://bakemono.jp/reading/blog/web/2256/">子ども向け無料プログラミング教室、CoderDojoとは？　運営者に話を聞いてみた！</a>」(バケモノ.jp) を読んでみてください。インタビュー形式で話が構成されているので、実際の活動のイメージがつきやすいかなと思います :)</p>
     </section>
+    <!--
     <section class="meetup" ng-controller="MeetupController as meetup">
       <h2>近日の道場</h2>
       <ul ng-if="loaded">
@@ -58,19 +61,20 @@
       </ul>
       <div class="spinner" ng-if="!loaded">イベント情報を読み込み中...</div>
     </section>
+    -->
+    
     <section>
-      <h2>参加方法</h2>
-      <p>希望の参加日のイベントページ(Facebook)で、参加表明します。参加する小中学生の学年、やりたいことをイベントページのタイムラインに書き込んでおいてください。受け入れ人数は最大5〜7人程度です。Facebookを利用していない場合は、電話 070-5431-5221 (<a href="http://www.osscafe.net/ja/">下北沢オープンソースCafe</a>) まで問い合せください。</p>
+      <h2>道場に参加してみたい!</h2>
+      <p>全国の CoderDojo のウェブサイトを下記にまとめてあります。お近くで道場が開催されていたら、そちらのウェブサイトから参加方法を確認してください。</p>
     </section>
     <section class="mentor" ng-controller="MentorController as mctrl">
-      <h2>こんなひとたちがやってます</h2>
-      <p>プログラマやデザイナ、エンジニアなど、ソフトやハードを作ることを専門にしている人たちです。こどものコンピュータ教育に携わる方、会場のOSSCafeの常連ボランティアさん他。</p>
+      <h2>全国の道場</h2>
       <ul ng-if="loaded">
         <li class="mentor-person" ng-repeat="mentor in mentors">
           <header>
             <a ng-href="{{ mentor.url }}"> 
               <span class="mentor-person-picture" ng-style="{'background-image':'url(http://graph.facebook.com/{{ mentor.source }}/picture?type=large)'}"></span>
-              <span class="mentor-person-name">{{ mentor.last_name }}さん</span>
+              <span class="mentor-person-name">{{ mentor.name }}</span>
             </a>
           </header>
           <ul class="tags">
@@ -79,19 +83,21 @@
           <p>{{ mentor.description }}</p>
         </li>
       </ul>
-      <div class="spinner" ng-if="!loaded">メンター情報を読み込み中...</div>
+      <div class="spinner" ng-if="!loaded">道場情報を読み込み中...</div>
     </section>
     <section>
-      <p>現在、WEBサイト制作中です。制作にご協力いただける方は、<a href="https://github.com/coderdojo-tokyo">こちら</a>までプルリクエスト下さい!</p>
+      <h2>CoderDojo をもっと知りたい</h2>
+      <p>下記ウェブサイトに行くと、より詳細な情報や、最新の情報にアクセスできます。</p>
+
+      <p>本WEBサイトのソースはGitHubから公開されています。制作にご協力いただける方は<a href="https://github.com/coderdojo-japan/web">こちら</a>までプルリクエストを送ってください!</p>
       <ul>
-        <li><a href="https://www.facebook.com/coderdojo.tokyo">Facebook Page</a></li>
-        <li><a href="https://github.com/coderdojo-tokyo">GitHub Organization</a></li>
-        <li><a href="http://zen.coderdojo.com/dojo/57">CoderDojo.com</a></li>
-        <li><a href="https://groups.google.com/forum/?fromgroups#!forum/coderdojo-tokyo">Google Groups</a></li>
+        <li><a href="https://www.facebook.com/coderdojo.jp">Facebook Group</a></li>
+        <li><a href="https://github.com/coderdojo-japan">GitHub Organization</a></li>
+        <li><a href="https://zen.coderdojo.com/">世界中の道場</a></li>
       </ul>
     </section>
     <footer>
-      <h2>CoderDojo Tokyo 運営グループ</h2>
+      <h2>CoderDojo Japan 運営グループ</h2>
     </footer>
     <script src="../public/js/angular.min.js"></script>
     <script src="../public/js/parse.js"></script>

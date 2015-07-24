@@ -44,7 +44,7 @@ module.exports = (request, status) ->
   
   loadMentors()
   .then ->
-    FB.api 'coderdojo.tokyo',
+    FB.api 'coderdojo.japan',
       locale: 'ja_JP'
       fields: 'events.fields(id,name,location,venue,description,start_time,end_time,attending,cover)'
   .then (data) ->
