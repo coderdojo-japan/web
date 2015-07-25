@@ -73,7 +73,7 @@
         <li class="mentor-person" ng-repeat="mentor in mentors">
           <header>
             <a ng-href="{{ mentor.url }}"> 
-              <span class="mentor-person-picture" ng-style="{'background-image':'url(http://graph.facebook.com/{{ mentor.source }}/picture?type=large)'}"></span>
+              <span class="mentor-person-picture" ng-style="{'background-image':'url({{ mentor.image_url }})'}"></span>
               <span class="mentor-person-name">{{ mentor.name }}</span>
             </a>
           </header>

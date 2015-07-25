@@ -35,8 +35,8 @@
   height: 96px;
   width: 96px;
   background-position: center center;
+  //border-radius: 48px;
   background-size: cover;
-  border-radius: 48px;
   margin: 0 auto;
 }
 .mentor-person-name {
