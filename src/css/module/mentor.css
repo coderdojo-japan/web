@@ -27,12 +27,12 @@
 .mentor-person > p {
   font-size: 90%;
   padding: 5px 10px;
-  text-align: justify;
+  text-align: center;
   margin: 5px 0;
 }
 .mentor-person-picture {
   display: block;
-  height: 96px;
+  height: auto;
   width: 96px;
   background-position: center center;
   //border-radius: 48px;
