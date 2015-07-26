@@ -4,7 +4,7 @@ module.exports = ($scope, $http) ->
   $scope.loaded = false
   $scope.mentors = []
   new Parse.Query Mentor
-  .descending 'last_attended'
+  .ascending 'order'
   .find()
   .then (result) ->
     $scope.mentors =
