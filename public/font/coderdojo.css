@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "coderdojo";
+  src: url('./coderdojo.eot');
+  src: url('./coderdojo.eot?#iefix') format('eot'),
+    url('./coderdojo.woff') format('woff'),
+    url('./coderdojo.ttf') format('truetype'),
+    url('./coderdojo.svg#coderdojo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cd:before {
+  display: inline-block;
+  font-family: "coderdojo";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cd-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.cd-2x { font-size: 2em; }
+.cd-3x { font-size: 3em; }
+.cd-4x { font-size: 4em; }
+.cd-5x { font-size: 5em; }
+.cd-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.cd-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+.cd-clock:before { content: "\EA01" }
+.cd-connect:before { content: "\EA02" }
+.cd-glyph07:before { content: "\EA03" }
+.cd-glyph08:before { content: "\EA04" }
+.cd-logo-jp:before { content: "\EA05" }
+.cd-logo:before { content: "\EA06" }
+.cd-pin:before { content: "\EA07" }
+.cd-spinner:before { content: "\EA08" }
