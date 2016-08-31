@@ -12,7 +12,6 @@
     <meta property="og:image"      content="http://coderdojo.jp/og-image.png">
     <meta property="og:image:type" content="image/png">
 
-    
     <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
@@ -84,18 +83,7 @@
       </ul>
       <div class="spinner" ng-if="!loaded">イベント情報を読み込み中...</div>
     </section>
-    -->
-    <section>
-      <h2>CoderDojo の公式カンファレンス「DojoCon Japan」を開催します!</h2>
-      <p>全国の CoderDojo 運営者や、業界の著名な方々が一同に集結し、様々な知見を共有します。<br />
-	参加費は無料です! ぜひお気軽にご参加ください :)</p>
-      <p><a href="http://dojocon.coderdojo.jp/">詳細を見る</a></p>      
-      <a href="http://dojocon.coderdojo.jp/"><img src="/img/dojocon-japan_cover.jpg" width="100%"></a>
-    </section>
-    <section>
-      <h2>道場に参加してみたい!</h2>
-      <p>全国の CoderDojo が下記にまとめてあります。お近くで道場が開催されていたら、各道場のウェブサイトから参加方法をご確認してください。</p>
-    </section>
+    -->    
     <section class="mentor" ng-controller="MentorController as mctrl">
       <h2>全国の道場</h2>
       <ul ng-if="loaded">
@@ -114,6 +102,12 @@
       </ul>
       <div class="spinner" ng-if="!loaded">道場情報を読み込み中...</div>
     </section>
+    
+    <section>
+      <a class="twitter-timeline"  href="https://twitter.com/search?q=dojocon%20OR%20coderdojo%20OR%20%E3%82%B3%E3%83%BC%E3%83%80%E3%83%BC%E9%81%93%E5%A0%B4%20OR%20%22Coder%20Dojo%22%20OR%20%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E9%81%93%E5%A0%B4%20lang%3Aja" data-partner="tweetdeck"data-widget-id="770838874780119041">CoderDojoに関するつぶやき</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </section>
+
     <section>
       <h2>CoderDojo をもっと知りたい</h2>
       <p>下記ウェブサイトから、より詳細な情報や、最新の情報にアクセスできます。</p>
