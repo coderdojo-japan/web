@@ -1,10 +1,10 @@
 # CoderDojo Web
 
-CoderDojoは小中学生のためのプログラミング道場
+CoderDojo - 小中学生のためのプログラミング道場
 
 ## はじめに
 
-このリポジトリは、CoderDojo TokyoのWebサイトのために作られました。他のDojoでもフォークして使えるようになっています。改良点などあれば、どしどしプルリクエストください。不明な点・質問は、[Issues](https://github.com/coderdojo-tokyo/web/issues)へどうぞ。
+CoderDojo JapanのWebサイトは、[CoderDojo Tokyoのリポジトリ](https://github.com/coderdojo-tokyo/web)を参考にして作られました。他のDojoでもフォークして使えるようになっています。改良点などあれば、どしどしプルリクエストください。不明な点・質問は、[Issues](https://github.com/coderdojo-japan/web/issues)へどうぞ。
 
 ## サイトの運用
 
@@ -71,7 +71,7 @@ Facebookページが運用されていて、開催情報をFacebookイベント�
 0. 環境を確認
 	- [Node.js](http://nodejs.org/)
 	- [gulp.js](http://gulpjs.com/): `$ npm install -g gulp`
-0. [このリポジトリ](https://github.com/coderdojo-tokyo/web)をフォーク
+0. [このリポジトリ](https://github.com/coderdojo-japan/web)をフォーク
 0. ターミナルでローカルディレクトリを開く: `$ cd path/to/dir`
 0. 依存ライブラリのインストールとビルド: `$ npm install`
 0. Watch: `$ gulp watch`
