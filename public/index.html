@@ -29,9 +29,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
+
     <script type="text/javascript">
-      location.href = "http://coderdojo.jp/?r=1";
+      var params = location.search;
+      if ( params.match(/r=1/) == null ) {
+        location.href = "http://coderdojo.jp/?r=1";
+      }
     </script>
 
     <link href="css/style.css" rel="stylesheet">
